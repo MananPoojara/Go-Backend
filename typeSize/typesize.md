@@ -1,5 +1,7 @@
 # Understanding Data Types in Go
 
+![alt text](./Golang-Integers.png)
+
 ## Introduction
 
 Welcome to the "Understanding Data Types in Go" repository! This simple Go program explores different data types such as integers, uints, floats, and complex numbers. The program aims to provide a basic understanding of how these data types work in Go.
@@ -75,8 +77,6 @@ An exceptional scenario for deviating from the defaults is when an application r
 ## Additional Resources
 
 For further details on this topic, additional resources are available for deeper exploration. While not mandatory, these resources can provide a more comprehensive understanding of number type selection in Go.
-
-Feel free to leverage this guide to make informed decisions when choosing number types in your Go projects. If you have any questions or need further clarification, don't hesitate to reach out.
 
 ## Author
 
