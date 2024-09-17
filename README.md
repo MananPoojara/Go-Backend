@@ -1,3 +1,3 @@
 # Learning Go
 
-#### (Basics)[./Basics/basic.md]
+#### [Basics](./Basics/basic.md)
