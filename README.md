@@ -2,4 +2,4 @@
 
 #### [Basics](./Basics/basic.md)
 
-#### [TypeSize](./Basics/typesize.md)
+#### [TypeSize](./typeSize/typesize.md)
