@@ -74,13 +74,32 @@ If you have specific concerns about performance and memory usage, opting for a m
 
 An exceptional scenario for deviating from the defaults is when an application requires an extensive range of unsigned integers, such as uint64. This specialized need justifies the use of a non-default type.
 
+### Rune Type Usage
+
+The program also showcases the use of the special type rune in Go, which is an alias for int32. This allows handling Unicode code points effectively.
+
+```go
+const name = "🐻"
+fmt.Printf("constant 'name' byte length: %d\n", len(name))
+fmt.Printf("constant 'name' rune length: %d\n", utf8.RuneCountInString(name))
+fmt.Println("=====================================")
+fmt.Printf("Hi %s, so good to have you back in the arcanum\n", name)
+```
+
+- Usage
+  To run the program and see the output showcasing different data types and the rune type in Go, you can execute the provided code in a Go environment.
+
+For more details and examples, please refer to the code in the program [file](typeSize.go).
+
+Feel free to explore and experiment with the code further!
+
 ## Additional Resources
 
 For further details on this topic, additional resources are available for deeper exploration. While not mandatory, these resources can provide a more comprehensive understanding of number type selection in Go.
 
 ## Author
 
-- Author: [Your Name]
+- Author: [MananPoojara]
 
 Feel free to experiment with the code, modify it, or extend its functionality to deepen your understanding of data types in Go. If you have any questions or require assistance, feel free to reach out.
 
