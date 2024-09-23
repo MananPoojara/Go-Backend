@@ -17,6 +17,28 @@ func billingCost(plan string) float64 {
 	}
 }
 
+func getCreator(os string) string {
+	var creator string
+	switch os {
+	case "linux":
+		creator = "Linus Torvalds"
+	case "windows":
+		creator = "Bill Gates"
+
+	// all three of these cases will set creator to "A Steve"
+	case "Mac OS":
+		fallthrough
+	case "Mac OS X":
+		fallthrough
+	case "mac":
+		creator = "A Steve"
+
+	default:
+		creator = "Unknown"
+	}
+	return creator
+}
+
 func main() {
 	plan := "basic"
 	fmt.Printf("The cost for a %s plan is $%.2f\n", plan, billingCost(plan))
@@ -28,4 +50,13 @@ func main() {
 	fmt.Printf("The cost for a %s plan is $%.2f\n", plan, billingCost(plan))
 	plan = "unknown"
 	fmt.Printf("The cost for a %s plan is $%.2f\n", plan, billingCost(plan))
+
+	fmt.Println("Notice that in Go, the break statement is not required at the end of a case to stop it from falling through to the next case. The break statement is implicit in Go.")
+	fmt.Println("Using FallThrough")
+
+	Os := "Mac OS"
+	Os2 := "Mac OS X"
+	fmt.Printf("The Crator Of %s is %s", Os, getCreator(Os))
+	fmt.Printf("\nThe Crator Of %s is also %s", Os2, getCreator(Os2))
+
 }
