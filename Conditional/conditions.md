@@ -6,8 +6,7 @@ This repository contains sample code demonstrating the usage of conditionals, if
 
 The if statements in Go do not use parentheses around the condition:
 
-```
-go
+```go
 if height > 4 {
     fmt.Println("You are tall enough!")
 } else if height > 6 {
