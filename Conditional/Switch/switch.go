@@ -58,5 +58,6 @@ func main() {
 	Os2 := "Mac OS X"
 	fmt.Printf("The Crator Of %s is %s", Os, getCreator(Os))
 	fmt.Printf("\nThe Crator Of %s is also %s", Os2, getCreator(Os2))
+	fmt.Println()
 
 }
