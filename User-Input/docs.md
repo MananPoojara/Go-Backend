@@ -97,6 +97,3 @@ In this case, `input, err :=` assigns the result of `ReadString('\n')` to both `
 - [Go Official Documentation: bufio](https://pkg.go.dev/bufio)
 - [Go Official Documentation: strconv](https://pkg.go.dev/strconv)
 - [Go Official Documentation: strings](https://pkg.go.dev/strings)
-
-This note provides a basic understanding of how to handle user input, trim extra characters, and convert strings to numeric types in
-This markdown format is concise and explains the code concepts relevant to `bufio`, string trimming, conversion, and error handling in Go. Let me know if you'd like any additional changes!
